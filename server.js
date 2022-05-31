@@ -3,7 +3,7 @@
 const dotenv = require("dotenv");
 dotenv.config();
 let express = require("express");
-const { MongoClient } = require("mongodb");
+const { MongoClient, ObjectId } = require("mongodb");
 //variable can be made up but argument has to match package
 let sanitizeHTML = require("sanitize-html");
 
@@ -136,7 +136,7 @@ app.post("/update-item", function (req, res) {
 
   //using goals name instaed of Id (sample)
   db.collection("items").findOneAndUpdate(
-    { _id: new mongodb.ObjectId(req.body.id) },
+    { _id: new ObjectId(req.body.id) },
     { $set: { text: safeText } },
     function () {
       res.send("Success");
@@ -146,7 +146,7 @@ app.post("/update-item", function (req, res) {
 
 app.post("/delete-item", function (req, res) {
   db.collection("items").deleteOne(
-    { _id: new mongodb.ObjectId(req.body.id) },
+    { _id: new ObjectId(req.body.id) },
     function () {
       res.send("Success");
     }
