@@ -40,7 +40,7 @@ function passwordProtected(req, res, next) {
   //console.log("Custom function")
   res.set("WWW-Authenticate", 'Basic realm="Goals App"');
   console.log(req.headers.authorization);
-  if (req.headers.authorization == "Basic amFjbWFuOmphdmFzY3JpcHQ=") {
+  if (req.headers.authorization == "Basic am9zZXBoOlN1cGVycmljaGd1eQ==") {
     next();
   } else {
     res.status(401).send("Authentication required");
