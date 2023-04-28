@@ -26,6 +26,6 @@ Navigate to [localhost:5000](http://localhost:5000)
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg" width="35"></a> | <a href="https://www.mongodb.com/" target="_blank"><img src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo.png" width="120"></a> |
 <br/>
 <p align="left">
-<a href="#"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="#"><img src="https://img.shields.io/badge/Build-Jacman%202.3-ff69b4" alt="Build Status"></a>
 <a href="#"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
